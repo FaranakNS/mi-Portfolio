@@ -93,6 +93,7 @@
 //     </main>
 //   );
 // }
+
 import HeroSection from '../component/HeroSection';
 
 // Set metadata in this file if needed
@@ -105,6 +106,8 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
+      
     </div>
+ 
   );
 }
