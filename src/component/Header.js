@@ -4,14 +4,24 @@ import styled from "styled-components";
 const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: center;
   padding: 20px;
-  width: 90rem;
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: ${({ theme }) => theme.colors.primary};
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 const Logo = styled.div`
   font-size: 1.5em;
   font-weight: bold;
+
+  img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+  }
 `;
 
 const Nav = styled.nav`
@@ -49,7 +59,10 @@ const Header = () => {
 
   return (
     <HeaderContainer className={scrolled ? "scrolled" : ""}>
-      <Logo>Logo</Logo>
+      <Logo>
+        {" "}
+        <img src="/bug-maker.png" alt="bug" />
+      </Logo>
       <Nav>
         <NavLink href="#home">Home</NavLink>
         <NavLink href="#CaseStudies">Services</NavLink>
