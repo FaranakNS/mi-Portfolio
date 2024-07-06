@@ -7,6 +7,7 @@ const HeaderContainer = styled.header`
   align-items: center;
   padding: 20px;
   width: 100%;
+  height: 35px;
   max-width: 90rem;
   margin: 0 auto;
   background-color: ${({ theme }) => theme.colors.primary};
