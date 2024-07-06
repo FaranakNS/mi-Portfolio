@@ -40,10 +40,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <ThemeProvider theme={theme}>
           <GlobalStyle />
           <Header />
+         
+        <section id="home"/>
           <HeroSection />
+
+          <section id="CaseStudies"/>
           <CaseStudies />
           
-         
+          <section id="Footer"/>
           <Footer />
         </ThemeProvider>
       </body>
