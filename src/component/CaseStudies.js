@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const CaseStudiesContainer = styled.div`
-  background: #f0f0f0;
+  background: #fef3ef;
   padding: 50px;
-  min-height: 200vh;
+  min-height: 85vh;
   text-align: center;
 `;
 
@@ -98,7 +98,7 @@ const CaseStudies = () => {
           {/* Example background image */}
           <h3>Sofia Pazari Home Goods</h3>
           <p>
-            Website and packaging design for independent maker Sofia Pazari's
+            Website and packaging design for independent maker Sofia Pazaris
             marketplace of original beauty, lifestyle, and home goods.
           </p>
           <a href="#">View Project</a>

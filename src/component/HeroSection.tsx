@@ -95,6 +95,7 @@ const HeroSection = () => {
           <img src="/farah-pic.jpg" alt="Faranak" />
         </ImageSection>
       </HeroContainer>
+
      
     </>
   );

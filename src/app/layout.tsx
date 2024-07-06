@@ -8,6 +8,8 @@ import theme from '../styles/theme';
 import CaseStudies from '../component/CaseStudies';
 import HeroSection from '../component/HeroSection';
 import Header from '../component/Header';
+import Footer from '../component/Footer';
+
   // Ensure this import
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -40,7 +42,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Header />
           <HeroSection />
           <CaseStudies />
+          
          
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
