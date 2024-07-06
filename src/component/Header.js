@@ -4,8 +4,9 @@ import styled from "styled-components";
 const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+  align-items: left;
+  padding: 20px;
+  width: 90rem;
 `;
 
 const Logo = styled.div`
@@ -51,9 +52,8 @@ const Header = () => {
       <Logo>Logo</Logo>
       <Nav>
         <NavLink href="#home">Home</NavLink>
-        <NavLink href="#about">About</NavLink>
-        <NavLink href="#services">Services</NavLink>
-        <NavLink href="#contact">Contact</NavLink>
+        <NavLink href="#CaseStudies">Services</NavLink>
+        <NavLink href="#Footer">Contact</NavLink>
       </Nav>
     </HeaderContainer>
   );
