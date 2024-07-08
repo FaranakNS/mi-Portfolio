@@ -26,7 +26,7 @@ A vibrant social networking platform to connect people worldwide. Features inclu
 
 ## 📬 Let's Connect
 
-I'm always excited to collaborate and discuss new opportunities. Reach out to me via [LinkedIn](https://www.linkedin.com/in/faranak-nasoori) or drop me an email at faranak.nasoori@example.com.
+I'm always excited to collaborate and discuss new opportunities. Reach out to me via [LinkedIn](https://www.linkedin.com/in/faranak-nasoori) or drop me an email at faranaknasoori@gmail.com.
 
 ---
 
