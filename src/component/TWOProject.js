@@ -88,15 +88,36 @@ const VideoStyled = styled.video`
   border-radius: 10px;
 `;
 
+const TestimonialSection = styled.div`
+  background-color: #000080; /* Navy background color */
+  color: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  margin-top: 40px;
+  text-align: center;
+`;
+
+const TestimonialText = styled.p`
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0;
+`;
+
+const Author = styled.p`
+  margin-top: 20px;
+  font-size: 1em;
+  font-style: italic;
+`;
+
 const TWOProject = () => {
   return (
     <ProjectContainer>
       <Header>
         <Title>Collette Noll Interior Design</Title>
         <Description>
-          Concept and creation of interior designer Collette Noll's website,
-          with focus on her variety of client-forward services and recent
-          successful collaborations.
+          Concept and creation of interior designer Collette Nolls website, with
+          focus on her variety of client-forward services and recent successful
+          collaborations.
         </Description>
         <InfoSection>
           <InfoItem>
@@ -111,20 +132,30 @@ const TWOProject = () => {
       </Header>
       <ImageSection>
         <MainImageContainer>
-          <Image src="/TWOPROJ.png" alt="Main Image" />
+          <Image src="/path-to-your-main-image.jpg" alt="Main Image" />
         </MainImageContainer>
         <SubImageSection>
           <SubImageContainer>
-            <Image src="/TWO2PROJ.jpg" alt="First Sub Image" />
+            <Image
+              src="/path-to-your-first-sub-image.jpg"
+              alt="First Sub Image"
+            />
           </SubImageContainer>
           <SubImageContainer>
             <VideoStyled controls>
-              <source src="/TWO.MOV" type="video/mp4" />
+              <source src="/path-to-your-video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </VideoStyled>
           </SubImageContainer>
         </SubImageSection>
       </ImageSection>
+      <TestimonialSection>
+        <TestimonialText>
+          Adri is so patient and thoughtful. She helped me highlight my work in
+          a way that makes me so proud of my unique approach to design.
+        </TestimonialText>
+        <Author>— Collette Noll</Author>
+      </TestimonialSection>
     </ProjectContainer>
   );
 };
