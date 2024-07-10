@@ -1,5 +1,8 @@
+"use client";
+import { useState, useEffect } from "react";
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 const CaseStudiesContainer = styled.div`
   background: #fef3ef;
@@ -23,9 +26,9 @@ const CaseStudiesWrapper = styled.div`
 const CaseStudyCard = styled.div`
   background: ${(props) => `url(${props.bgImage}) no-repeat center center`};
   background-size: cover;
-  color: #fff; /* Adjust the text color to be white */
+  color: #fff;
   padding: 20px;
-  border-radius: 20px; /* More rounded corners */
+  border-radius: 20px;
   width: 30%;
   box-sizing: border-box;
   text-align: left;
@@ -33,23 +36,23 @@ const CaseStudyCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 
   h3 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: #fff; /* Title color */
+    color: #fff;
   }
 
   p {
     font-size: 1em;
     margin-bottom: auto;
-    color: #fff; /* Paragraph color */
+    color: #fff;
   }
 
-  a {
+  .link {
     color: #fff;
     text-decoration: underline;
     font-size: 1em;
@@ -67,7 +70,7 @@ const CaseStudyCard = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); /* Overlay to make text readable */
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
   }
 
@@ -83,35 +86,35 @@ const CaseStudies = () => {
       <CaseStudyHeader>Case Studies</CaseStudyHeader>
       <CaseStudiesWrapper>
         <CaseStudyCard bgImage="/farah-pic.jpg">
-          {" "}
-          {/* Example background image */}
           <h3>Collette Noll Interior Design</h3>
           <p>
             Concept and creation of interior designer Collette Nolls website,
             with focus on her variety of client-forward services and recent
             successful collaborations.
           </p>
-          <a href="#">View Project</a>
+          <Link href="/two-project">
+            <span className="link">View Project</span>
+          </Link>
         </CaseStudyCard>
         <CaseStudyCard bgImage="/images/sofia-pazari.jpg">
-          {" "}
-          {/* Example background image */}
           <h3>Sofia Pazari Home Goods</h3>
           <p>
-            Website and packaging design for independent maker Sofia Pazaris
+            Website and packaging design for independent maker Sofia Pazari
             marketplace of original beauty, lifestyle, and home goods.
           </p>
-          <a href="#">View Project</a>
+          <Link href="#">
+            <span className="link">View Project</span>
+          </Link>
         </CaseStudyCard>
         <CaseStudyCard bgImage="/images/sauce-slice.jpg">
-          {" "}
-          {/* Example background image */}
           <h3>Sauce & Slice Pizzeria</h3>
           <p>
             Brand identity development and website redesign for family-owned and
             longstanding Brooklyn-based pizzeria Sauce & Slice.
           </p>
-          <a href="#">View Project</a>
+          <Link href="#">
+            <span className="link">View Project</span>
+          </Link>
         </CaseStudyCard>
       </CaseStudiesWrapper>
     </CaseStudiesContainer>

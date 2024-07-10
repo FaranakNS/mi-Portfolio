@@ -54,17 +54,18 @@
 
 // export default App;
 // pages/_app.js
-"use client"; // Add this directive at the top
+"use client";
 
-import React from "react";
-import Layout from "../src/app/layout";
+import HeroSection from "../components/HeroSection";
+import CaseStudies from "../components/CaseStudies";
+import TwoProjectPage from "./two-project/page";
 
-function MyApp({ Component, pageProps }) {
+export default function Home() {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <div>
+      <HeroSection />
+      <CaseStudies />
+      <TwoProjectPage />
+    </div>
   );
 }
-
-export default MyApp;
