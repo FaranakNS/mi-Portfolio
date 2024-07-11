@@ -124,8 +124,10 @@ export default function Home() {
       <HeroSection />
       <CaseStudies />
       <Link href="/two-project">
-      
+    
       </Link>
+   <link href="/Booking-page">
+   </link>
     </div>
   );
 }

@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
-
+import Link from "next/link";
 
 // Existing styled components
 const HeroContainer = styled.div`
@@ -89,7 +89,9 @@ const HeroSection = () => {
           <Subtitle>
             I help small businesses and entrepreneurs build meaningful digital experiences.
           </Subtitle>
+          <Link href="/booking-page">
           <CTAButton>Work with Me</CTAButton>
+          </Link>
         </TextSection>
         <ImageSection>
           <img src="/farah-pic.jpg" alt="Faranak" />

@@ -59,6 +59,7 @@
 import HeroSection from "../components/HeroSection";
 import CaseStudies from "../components/CaseStudies";
 import TwoProjectPage from "./two-project/page";
+import BookingPage from "./Booking-page/page";
 
 export default function Home() {
   return (
@@ -66,6 +67,7 @@ export default function Home() {
       <HeroSection />
       <CaseStudies />
       <TwoProjectPage />
+      <BookingPage />
     </div>
   );
 }
