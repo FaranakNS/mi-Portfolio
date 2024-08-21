@@ -113,37 +113,66 @@ const TWOProject = () => {
   return (
     <ProjectContainer>
       <Header>
-        <Title>Collette Noll Interior Design</Title>
+        <Title>The World's Opinion (TWO) Project</Title>
         <Description>
-          Concept and creation of interior designer Collette Nolls website, with
-          focus on her variety of client-forward services and recent successful
-          collaborations.
+          Developed a unique social media platform that allows users to create
+          polls, cast votes, and engage in discussions on various topics. Our
+          goal was to create an intuitive and engaging user experience,
+          fostering community interaction and decision-making.
         </Description>
+        <div>
+          <h2>Technical Focus</h2>
+          Designed and implemented a robust backend infrastructure to support
+          real-time voting and discussions, with a strong focus on
+          authentication and user sign-up to ensure that each user has their own
+          account. Leveraged modern frameworks to create a responsive and
+          user-friendly interface, providing seamless interactions across all
+          devices.
+        </div>
+        <div>
+          <h2>Challenges</h2>
+          Tackled challenges related to data synchronization, scaling the
+          platform for a growing user base, and maintaining high performance
+          during peak usage.
+        </div>
+
         <InfoSection>
           <InfoItem>
             <InfoTitle>Client</InfoTitle>
-            Collette Noll
+            The Vice President of United Way of Alberta Capital Region
+          </InfoItem>
+          <InfoItem>
+            <InfoTitle>Github</InfoTitle>
+            <a href="https://github.com/FaranakNS/TWO">
+              <img
+                src="/githubicon.jpg"
+                alt="Project Screenshot"
+                style={{
+                  width: "45px",
+                  height: "45px",
+                  display: "inline-block",
+                }}
+              />
+            </a>
           </InfoItem>
           <InfoItem>
             <InfoTitle>Year</InfoTitle>
-            2024
+            2023
           </InfoItem>
         </InfoSection>
       </Header>
+
       <ImageSection>
         <MainImageContainer>
-          <Image src="/path-to-your-main-image.jpg" alt="Main Image" />
+          <Image src="/TWOPROJ.png" alt="Main Image" />
         </MainImageContainer>
         <SubImageSection>
           <SubImageContainer>
-            <Image
-              src="/path-to-your-first-sub-image.jpg"
-              alt="First Sub Image"
-            />
+            <Image src="/TWO2PROJ.jpg" alt="First Sub Image" />
           </SubImageContainer>
           <SubImageContainer>
             <VideoStyled controls>
-              <source src="/path-to-your-video.mp4" type="video/mp4" />
+              <source src="/TWO.MOV" type="video/mp4" />
               Your browser does not support the video tag.
             </VideoStyled>
           </SubImageContainer>
@@ -151,10 +180,13 @@ const TWOProject = () => {
       </ImageSection>
       <TestimonialSection>
         <TestimonialText>
-          Adri is so patient and thoughtful. She helped me highlight my work in
-          a way that makes me so proud of my unique approach to design.
+          The platform has had a significant impact on the people of Alberta by
+          providing a space where individuals can freely share their opinions on
+          a wide range of topics, from politics to entertainment. By enabling
+          users to create and participate in polls, the platform fosters civic
+          engagement and encourages community involvement in decision-making
+          processes
         </TestimonialText>
-        <Author>— Collette Noll</Author>
       </TestimonialSection>
     </ProjectContainer>
   );

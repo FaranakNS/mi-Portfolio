@@ -85,12 +85,12 @@ const CaseStudies = () => {
     <CaseStudiesContainer>
       <CaseStudyHeader>Case Studies</CaseStudyHeader>
       <CaseStudiesWrapper>
-        <CaseStudyCard bgImage="/farah-pic.jpg">
-          <h3>Collette Noll Interior Design</h3>
+        <CaseStudyCard bgImage="/coding.webp">
+          <h3>TWO</h3>
           <p>
-            Concept and creation of interior designer Collette Nolls website,
-            with focus on her variety of client-forward services and recent
-            successful collaborations.
+            A social media app that lets users create polls, vote, and discuss a
+            range of topics. Designed with a focus on simplicity and user
+            engagement to enhance community interaction.
           </p>
           <Link href="/two-project">
             <span className="link">View Project</span>
